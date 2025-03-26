@@ -1,0 +1,97 @@
+body{
+  background-image:linear-gradient(to left, rgb(146, 22, 191), rgb(56, 8, 73));
+}
+.status{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.game-board{
+  position: absolute;
+  top:15%;
+  left: 40%;
+  transform: translate(50% 50%);
+}
+.status{
+  margin-bottom: 10px;
+}
+.square {
+  background-color: #ae00ff;
+  border:.1px solid rgba(255, 255, 255, 0.747);
+  color: azure;
+  filter: drop-shadow(1px 8px 5px  black);
+  transition: .2s ease ;
+  float: left;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 50px;
+  margin-right: 5px;
+  margin-top: 5px;
+
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+.square:hover{
+  filter: drop-shadow(1px 10px 10px black);
+}
+.square:active{
+  filter: drop-shadow(1px 1px 1px black);
+}
+/* .square:focus{
+  filter: drop-shadow(1px 1px 1px black);
+} */
+.game {
+  display: flex;
+  width: 300px;
+  height: 150px;
+
+  flex-direction: row;
+
+}
+
+
+
+li button{
+  transition: 1s ease ;
+  background-color: rgb(146, 22, 191);
+  width: 100px;
+  height: 50px;
+  color: beige;
+}
+ol{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  filter: drop-shadow(1px 8px 5px  black);
+  
+}
+ol button{
+
+  border: none;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.reset{
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  left: 45%;
+  transform: translate(-50%);
+  background-color: rgb(214, 13, 13);
+  color: white;
+  font-weight: 700;
+  border: .1px rgba(255, 255, 255, 0.518) solid;
+  filter: drop-shadow(1px 8px 5px  black);
+  transition: .5s ease;
+}
+
+.reset:active{
+  filter: drop-shadow(1px 1px 1px black);
+}
